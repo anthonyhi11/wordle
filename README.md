@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Jake's Wordle (jake is a friend who still plays wordle, so I thought of him as I wrote this)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A quick and dirty attempt at Wordle
 
-Currently, two official plugins are available:
+Challenge was from Josh Comeau's Joy of React course, however I didn't use any of his code or follow along with the challenges. I figured the best way for me to grow is to just build on my own and check how my implementation turned out vs what he did. I'm only using the features of React that Josh has taught in the course up to the point of the challenge.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I'll probably come back and refactor this as time goes on to make it more robust and really shine as well as use more best practices.
 
-## Expanding the ESLint configuration
+I use React daily, but lately, I've felt kind of stagnant and more like I'm just "using" the tool. I want to deeply understand it and really think about what's going on under the hood.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I also want an excuse to build more quick and fun projects with React. I rarely get to start from scratch in my day job, so this has actually been pretty fun to work on after hours.
 
-- Configure the top-level `parserOptions` property like this:
+## To Run:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- clone
+- npm install
+- npm run dev
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## TODOs
+
+- Fix up CSS lol (im so horrible)
+- Add plenty of words
+- Restart game with random word
+- Make sure the user is typing in an actual word
+- etc etc etc etc.

@@ -18,7 +18,7 @@ function TextForm(props: TextFormProps) {
         type="text"
         maxLength={5}
         minLength={5}
-        onChange={(e) => setGuess(e.target.value)}
+        onChange={(e) => setGuess(e.target.value.toUpperCase())}
         required
         value={guess}
       />

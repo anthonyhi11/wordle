@@ -6,7 +6,8 @@ import "./wordle.css";
 function Wordle() {
   const [guesses, setGuesses] = useState<string[]>(["", "", "", "", ""]);
   const [winner, setWinner] = useState<boolean>(false);
-  const answer = "HELLO";
+  // Jake's newborn, i know... proper nouns shouldn't work...
+  const answer = "CAIRO";
 
   const guessCount = useMemo(() => {
     return winner ? 5 : guesses.filter((g) => g.length > 1).length;
@@ -22,10 +23,15 @@ function Wordle() {
     setGuesses(nextGuesses);
   };
 
+  const handleStartOver = () => {
+    setGuesses(["", "", "", "", ""]);
+    setWinner(false);
+  };
+
   return (
     <>
       <header className="header">
-        <h1>Wordle</h1>
+        <h1>Jake's Wordle</h1>
       </header>
       <div className="game-container">
         <WorldeGrid
@@ -36,9 +42,15 @@ function Wordle() {
         {guessCount < 5 ? (
           <TextForm checkAnswer={checkAnswer} />
         ) : winner ? (
-          <div>you win!</div>
+          <div className="post-game">
+            <p>You Win!</p>
+            <button onClick={handleStartOver}>Start over</button>
+          </div>
         ) : (
-          <div>loser</div>
+          <div className="post-game">
+            <p>You Lose.....</p>
+            <button onClick={handleStartOver}>Start over</button>
+          </div>
         )}
       </div>
     </>
