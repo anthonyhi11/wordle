@@ -1,0 +1,89 @@
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100vw;
+}
+
+/**
+* TODO AH add media queries
+*/
+
+.text-form-container input {
+  font-size: 50px;
+  height: 80px;
+  text-align: center;
+  width: 25%;
+}
+
+.text-form-container button {
+  width: 25%;
+  background-color: blue;
+  color: white;
+  margin-top: 10px;
+}
+
+.grid-parent {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.row-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-parent .box {
+  height: 80px;
+  width: 70px;
+  overflow: hidden;
+  font-size: 25px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.red {
+  border: red solid 2px;
+}
+
+.green {
+  border: green solid 2px;
+}
+
+.yellow {
+  border: orange solid 2px;
+}
+
+.normal {
+  border: black solid 2px;
+}
